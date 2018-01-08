@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 111559149}
   - component: {fileID: 111559148}
   - component: {fileID: 111559147}
+  - component: {fileID: 111559150}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -150,7 +151,7 @@ MeshCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 111559145}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 68e410cf6027a49e7b59424220d33aca, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -199,6 +200,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 111559145}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &111559150
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 111559145}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &370149094
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +535,7 @@ MonoBehaviour:
   - {fileID: 1224909938850756, guid: 3caac2730eb3d4b40b8e5dd70d1a4f0c, type: 2}
   - {fileID: 1186858085393084, guid: 5384e6e431fce440fad2dfc633e07fe8, type: 2}
   - {fileID: 1913228920168298, guid: 6dda12fc5d9ee440fb3a87737bc9ea65, type: 2}
-  Min: 100
+  Min: 150
   Max: 300
 --- !u!1 &1907164299
 GameObject:
